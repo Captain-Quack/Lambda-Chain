@@ -1,0 +1,11 @@
+from string import ascii_lowercase as l
+e = 'x ='
+m = 'print(x'
+for i,x in enumerate(l):
+    e += f'lambda {x}:'
+    m += f'({i})'
+e+=f"j"
+m+=')'
+exec(f'{e}\n{m}')
+               
+    
